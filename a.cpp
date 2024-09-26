@@ -1,1 +1,1 @@
-ass
+sample
