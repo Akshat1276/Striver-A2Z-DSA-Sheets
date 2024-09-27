@@ -1,4 +1,2 @@
 sample
-z
-s
-s
+ 
