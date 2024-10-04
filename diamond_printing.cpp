@@ -26,3 +26,4 @@ int main(){
   nStarDiamond(3);
   return 0;  
 }
+
