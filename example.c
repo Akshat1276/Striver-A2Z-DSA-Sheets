@@ -10,6 +10,7 @@ int main(){
 
 
   shit.alpha = 'a';
+
   printf("%d\n", shit.number);
   printf("%c\n", shit.alpha);
   return 0;
