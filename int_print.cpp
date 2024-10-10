@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-string strAdd(int a, string b){
+string strAd(int a, string b){
     string c = "";
     for(int p=1; p<=a; p++){
         c += b;
@@ -13,11 +13,11 @@ string strAdd(int a, string b){
 
 void nStarTriangle(int n) {
     for(int i=1; i<n; i++){
-        cout << strAdd(i, "*") << endl;
+        cout << strAd(i, "*") << endl;
     }
-    cout << strAdd(n, "*") << endl;
+    cout << strAd(n, "*") << endl;
     for(int j=1; j<n; j++){
-        cout << strAdd(n-j, "*") << endl;
+        cout << strAd(n-j, "*") << endl;
     }
 }
 
