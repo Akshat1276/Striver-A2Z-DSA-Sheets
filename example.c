@@ -5,6 +5,7 @@ struct boom{
 };
 int main(){
   struct boom shit;
+
   shit.number = 12;
 
 
