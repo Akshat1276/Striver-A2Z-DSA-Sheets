@@ -12,12 +12,14 @@ int main(){
         cin >> b;
         arr.push_back(b);
     }
-    for(int p=n-1; p>=0; p--){
-        for(int q=0; q<=p-1; q++){
-            if(arr[q]>arr[q+1]){
-                swap(arr[q],arr[q+1]);
+    for(int p=0; p<n-1; p++){
+        int min=p;
+        for(int q=p+1; q<=n-1; q++){
+            if(arr[q]<arr[min]){
+                min=q;
             }
         }
+        swap(arr[p],arr[min]);
     }
     for(int i = 0; i < n; i++){
         cout << arr[i] << " ";
