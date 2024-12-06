@@ -1,5 +1,3 @@
-
-
 #include <vector>
 #include <iostream>
 using namespace std;
@@ -12,15 +10,12 @@ int main(){
         cin >> b;
         arr.push_back(b);
     }
-    for(int p=0; p<n-1; p++){
-        int min=p;
-        for(int q=p+1; q<=n-1; q++){
-            if(arr[q]<arr[min]){
-                min=q;
-            }
+    for (int x = 0; x <= n - 1; x++) {
+        int y = x;
+        while (y > 0 && arr[y - 1] > arr[y]) {
+            swap(arr[y - 1], arr[y]);
+            y--;
         }
-        swap(arr[p],arr[min]);
-    }
     for(int i = 0; i < n; i++){
         cout << arr[i] << " ";
     }
