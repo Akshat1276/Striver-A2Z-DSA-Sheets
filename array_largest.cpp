@@ -16,22 +16,4 @@ int maxArr1(vector<int>& arr){
     return max_num;
 }
 
-//USING BRUTE FORCE
-//T(N)=O(Nlog(N))
-int maxArr2(vector<int>& arr){
-    sort(arr.begin(), arr.end());
-    return arr[arr.size()-1];
-}
-
-int main(){
-    vector<int> arr = {};
-    int n;
-    cin >> n;
-    while(n--){
-        int b;
-        cin >> b;
-        arr.push_back(b);
-    }
-    int max = maxArr1(arr);
-    cout << max;
-}
+//better solution
