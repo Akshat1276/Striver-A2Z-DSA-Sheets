@@ -1,4 +1,4 @@
-
+//GOTTA STUDY HASHING AND COME BACM
 
 
 #include <bits/stdc++.h>
@@ -35,4 +35,18 @@ int main()
     cout << "The single element is: " << ans << endl;
     return 0;
 }
+
+
+
+//optimal solution using XOR
+
+
+int n = arr.size();
+
+    // XOR all the elements:
+    int xorr = 0;
+    for (int i = 0; i < n; i++) {
+        xorr = xorr ^ arr[i];
+    }
+    return xorr;
 
